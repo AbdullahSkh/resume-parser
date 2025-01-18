@@ -40,11 +40,12 @@ const UploadFile = () => {
       };
 
       reader.onerror = (err) => reject(err);
-      reader.readAsArrayBuffer(file);
+      reader.readAsArrayBuffer(file); // Read the file as ArrayBuffer
     });
   };
 
   const extractDetailsWithAI = async (resumeText) => {
+    const apiKey = process.env.OPEN_API;
     try {
       const response = await axios.post(
         "https://api.openai.com/v1/chat/completions",
@@ -70,7 +71,7 @@ const UploadFile = () => {
         },
         {
           headers: {
-            Authorization: `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`, // Replace with your API key
+            Authorization: apiKey,
             "Content-Type": "application/json",
           },
         }
