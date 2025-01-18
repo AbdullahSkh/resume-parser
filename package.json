@@ -1,0 +1,20 @@
+{
+  "name": "resume-scanner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdullahSkh/resume-parser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdullahSkh/resume-parser/issues"
+  },
+  "homepage": "https://github.com/AbdullahSkh/resume-parser#readme",
+  "description": ""
+}
